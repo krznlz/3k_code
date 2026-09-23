@@ -9,7 +9,8 @@ const path = require('path')
 module.exports = {
   entry: {
     index: './src/javascripts/index.js',
-    rpsgame: './src/javascripts/rps-game.js'
+    rpsgame: './src/javascripts/rps-game.js',
+    rpsreact: './src/javascripts/rps-game.jsx'
   },
   output: {
     filename: '[name].js',
