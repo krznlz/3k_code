@@ -11,6 +11,7 @@ function createPages(template, filename, chunks) {
 const htmlPages = [
   createPages('./src/index.html', './index.html', ['index']),
   createPages('./src/pages/rps-game.html', './rps-game.html', ['index','rpsgame']),
+  createPages('./src/pages/homework-game.html', './homework-game.html', ['index','homeworkgame']),
   createPages('./src/pages/rps-react.html', './rps-react.html', ['index','rpsreact']),
 ]
 

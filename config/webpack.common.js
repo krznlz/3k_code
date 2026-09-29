@@ -10,6 +10,7 @@ module.exports = {
   entry: {
     index: './src/javascripts/index.js',
     rpsgame: './src/javascripts/rps-game.js',
+    homeworkgame: './src/javascripts/homework-game.js',
     rpsreact: './src/javascripts/rps-game.jsx'
   },
   output: {
