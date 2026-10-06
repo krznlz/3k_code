@@ -8,7 +8,7 @@ function Target ({position, Game, onTargetClick}) {
     }
 
 
-    if (isGame == false) {
+    if (Game == false) {
         return
     }
 
