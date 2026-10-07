@@ -14,6 +14,7 @@ const htmlPages = [
   createPages('./src/pages/homework-game.html', './homework-game.html', ['index','homeworkgame']),
   createPages('./src/pages/rps-react.html', './rps-react.html', ['index','rpsreact']),
   createPages('./src/pages/hw_react.html', './hw_react.html', ['index','hwreact']),
+  createPages('./src/pages/form-react.html', './form-react.html', ['index','formreact']),
 ]
 
 module.exports = htmlPages

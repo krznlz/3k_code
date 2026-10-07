@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form React</title>
+</head>
+<body class="form-react">
+    <header class="header">
+        <div class="brand">СВОЁ</div>
+        <h1> Твоя футболка. Твои правила</h1>
+    </header>
+    <form method="post" class="form">
+        <div class="fields">
+            <section class="panel">
+                <h2>1. Собери футболку</h2>
+                <div class="field">
+                    <label for="color">Цвет</label>
+                    <select name="color" id="color">
+                        <option value="">Не выбран</option>
+                        <option value="Молочный">Молочный</option>
+                        <option value="Лавандовый">Лавандовый</option>
+                        <option value="Графитовый">Графитовый</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="size">Размер</label>
+                    <select name="size" id="size">
+                        <option value="">Не выбран</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="count">Количество: от 1 до 10</label>
+                    <input type="number" id="name" name="count" min="1" max="10">
+                </div>
+                <div class="field">
+                    <input id="printing" type="checkbox" name="printing">
+                    <label for="printing">Добавить надпись + 300 руб</label>
+                </div>
+                <div class="field">
+                    <label for="lettering">Надпись: до 20 символов</label>
+                    <input type="text" id="lettering" name="lettering" maxlength="20">
+                </div>
+            </section>
+                <h2> 2. Получение заказа</h2>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="delivery" value="pickup" checked>
+                        Самовывоз
+                    </label>
+                     <label>
+                        <input type="radio" name="delivery" value="courier">
+                        Курьер
+                    </label>
+                </div>
+                <div class="field">
+                    <label for="address">Адрес</label>
+                    <textarea name="address" id="address"></textarea>
+                </div>
+            </section>
+            <section class="panel">
+                <h2> 3. Контакты</h2>
+                <div class="field">
+                    <label for="lettering"> Ваш email </label>
+                    <input type="text" id="email" name="name">
+                </div>
+                <div class="field">
+                    <label for="lettering"> Ваш email </label>
+                    <input type="text" id="email" name="name">
+                </div>
+                <div class="field">
+                    <label for="lettering"> Ваш email </label>
+                    <input type="text" id="email" name="name">
+                </div>
+            </section>
+        </div>
+        <div class="sidebar">
+            <button type="submit">Отправить</button>
+        </div>
+    </form>
+</body>
+</html>
