@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интерактивная форма на Реакте</title>
+</head>
+<body class="form-react">
+    <div class="container">
+        <header class="header">
+            <div class="brand">СВОЁ</div>
+            <h1>Твоя футболка. Твои правила.</h1>
+            <p>Выбери цвет, размер и свою надпись.</p>
+        </header>
+        <form action="" method="post" class="form">
+            <div class="fields">
+                <section class="panel">
+                    <h2>1. Собери футболку</h2>
+                    <div class="field">
+                        <label for="color">Цвет</label>
+                        <select name="color" id="color" required>
+                            <option value="">Не выбран</option>
+                            <option value="Молочный">Молочный</option>
+                            <option value="Лавандовый">Лавандовый</option>
+                            <option value="Графитовый">Графитовый</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="size">Размер</label>
+                        <select name="size" id="size" required>
+                            <option value="">Не выбран</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="count">Количество: от 1 до 10</label>
+                        <input type="number" id="name" value="1" name="count" min="1" max="10" required>
+                    </div>
+                    <div class="field">
+                        <label for="printing">
+                            <input id="printing" type="checkbox" name="printing">
+                            Добавить надпись + 300 руб
+                        </label>
+                    </div>
+                    <div class="field">
+                        <label for="lettering">Надпись: до 20 символов</label>
+                        <input type="text" id="lettering" name="lettering" maxlength="20">
+                    </div>
+                </section>
+                <section class="panel">
+                    <h2>2. Получение заказа</h2>
+                    <div class="options">
+                        <label for="delivery">
+                            <input type="radio" name="delivery" value="pickup" checked>
+                            Самовывоз: бесплатно
+                        </label>
+                        <label for="delivery">
+                            <input type="radio" name="delivery" value="courier">
+                            Курьер: +100 руб
+                        </label>
+                    </div>
+                    <div class="field">
+                        <label for="address">Адрес доставки</label>
+                        <textarea name="address" id="address"></textarea>
+                    </div>
+                </section>
+                <section class="panel">
+                    <h2>3. Контакты</h2>
+                    <div class="field">
+                        <label for="name">Твое имя</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="field">
+                        <label for="email">Твой email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="field">
+                        <label for="phone">Твой телефон</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </section>
+            </div>
+            <div class="sidebar">
+                <section class="panel preview">
+                    <h3>Твой дизайн</h3>
+                    <div class="shirt">
+                        <img src="../images/t-shirt.png">
+                    </div>
+                    <p class="hint">Лаванда · M · 2 шт.</p>
+                </section>
+                <section class="panel">
+                    <h3>Твой заказ</h3>
+                    <p class="price-row">
+                        <span>Футболка x 1</span>
+                        <span>1200</span>
+                    </p>
+                    <p class="price-row">
+                        <span>Самовывоз</span>
+                        <span>Бесплатно</span>
+                    </p>
+                    <p class="price-row total">
+                        <span>Итого: </span>
+                        <span>1200</span>
+                    </p>
+                </section>
+                <button type="submit">Оформить заказ</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

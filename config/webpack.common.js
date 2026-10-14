@@ -13,6 +13,7 @@ module.exports = {
     homeworkgame: './src/javascripts/homework-game.js',
     rpsreact: './src/javascripts/rps-game.jsx',
     hwreact: './src/javascripts/homework-game.jsx',
+    formreact: './src/javascripts/form-react.jsx'
   },
   output: {
     filename: '[name].js',
